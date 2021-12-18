@@ -1,0 +1,95 @@
+* {
+	box-sizing: border-box;
+}
+
+body {
+	text-align: center;
+	font-family: Georgia, sans-serif;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	gap: 6.6rem;
+	flex-wrap: wrap;
+}
+
+.container {
+	display: flex;
+	justify-content: center;
+    align-items: center;
+	padding: 3rem 0;
+	width: 100vh;
+}
+
+header{
+	align-self: flex-start;
+	box-shadow: 0 0 2px blueviolet;
+	padding: 2rem;
+	margin-top: 1.9rem;
+	border-radius: .222rem;
+}
+
+h2 {
+	font-size: 2.9rem;
+	color: #ae1ae0;
+}
+
+h3 {
+	font-size: 2.6rem;
+	color: #ea57e8;
+	margin-bottom: 0;
+}
+
+.grid {
+    display: flex;
+    max-width: 100vh;
+    height: 606px;
+    flex-wrap: wrap;
+    flex: 1;
+	gap: 12px;
+}
+
+@media screen and (max-width: 900px) {
+	.container {
+		padding: 3rem 24px;
+	}
+}
+
+.square {
+	display: flex;
+	flex: 1 0 12rem;
+	justify-content: center;
+	align-items: center;
+	height: 200px;
+	border: 2px solid #ae1ae0;
+	border-radius: 0.33rem;
+}
+
+button {
+	padding: 1rem 4rem;
+	margin-top: 2rem;
+	font-weight: 700;
+	font-size: 1.6rem;
+	border-radius: 12px;
+	background: linear-gradient(#e10fde, #ae1ae0);
+	color: #fff;
+	cursor: pointer;
+	border: none;
+	transition: opacity 300ms ease-in-out;
+}
+
+
+button:hover {
+	opacity: .76;
+}
+
+.mole {
+	background-image: url("mole.png");
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.active {
+	border: 2px solid aquamarine;
+	box-shadow: 0 0 4px #ccc;
+	cursor: pointer;
+}
